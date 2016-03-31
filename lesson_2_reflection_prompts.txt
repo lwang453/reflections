@@ -10,13 +10,20 @@ staging area is an intermediate area between the working directory and the repos
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+You can use git diff to compare the staging area with the working repository to see if how many changes you have staged, and if they are logical. You can also use git diff --staged to see if the changes are have already been made before. This will help to make sure that you don't commit with there is no changes, or when there are more than one logical change. 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+If you want to branch out into different versions, of other language, or experienment with new feature, that you are not sure about adding to the official program, and while you are working on these things, you would still like to have an official copy to show others what you 're working on
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+The diagram shows from which commit each branch branches out, therefore showing how the branches relate to one another, and ad what point the branch was added. 
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together brings the changes on two commits into one file, and the new commit will contain the changes from both branches. To show that where the new commit come from. Each commit will know its parent. The merge commit will have two parents. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros is this would avoid ambiguity, and resolving conflicts manually would avoid conglomerate of codes that doesn't make any sense, cause git at this point is not intelligent enough to make good choices in conflict. Cons is that it's more work for the users cause they have to manually compare the codes and resolve the conflicts. 
