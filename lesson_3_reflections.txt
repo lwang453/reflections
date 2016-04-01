@@ -16,10 +16,10 @@ use one instead of another?
     Fill in your answer here
     Forks is for copying a repository from GitHub directly onto GitHub, clone is for copying a repository from GitHub to local or from local to another place local. Branches are for within the same repository but different branches. A branch copies all the previous commit from the branch the you were working on when you branch out. 
 
-What is the benefit of having a copy of the last known state of the remote
-stored locally?
+What is the benefit of having a copy of the last known state of the remote stored locally?
 
     Fill in your answer here
+    So that when you collaborate with others, you won't be running into conflicts all the time. 
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
